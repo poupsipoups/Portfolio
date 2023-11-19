@@ -7,32 +7,32 @@ import Image from 'next/image';
 
 const EmailSection = () => {
 
-  const handleSubmit = async (e: any) =>{
-    e.preventDefault();
+  // const handleSubmit = async (e: any) =>{
+  //   e.preventDefault();
 
-    const data = {
-      email: e.target.email.value,
-      submit: e.target.submit.value,
-      message: e.target.message.value
-    }
+  //   const data = {
+  //     email: e.target.email.value,
+  //     submit: e.target.submit.value,
+  //     message: e.target.message.value
+  //   }
   
-  const JSONdata = JSON.stringify(data);
-  const endPoint = "api/send";
+  // const JSONdata = JSON.stringify(data);
+  // const endPoint = "api/send";
 
-  const options = {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json'
-    },
-    body: JSONdata
-  }
-  const response = await fetch(endPoint, options);
-  const resData = await response.json();
-  if(resData.status === 'success'){
-    console.log('Message sent.')
-  }
+  // const options = {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-type': 'application/json'
+  //   },
+  //   body: JSONdata
+  // }
+  // const response = await fetch(endPoint, options);
+  // const resData = await response.json();
+  // if(resData.status === 'success'){
+  //   console.log('Message sent.')
+  // }
 
-  }
+  // }
 
   return (
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 px-12 gap-4'>
@@ -49,7 +49,7 @@ const EmailSection = () => {
             </div>
         </div>
         <div>
-          <form className='flex flex-col gap-4 my-2' onSubmit={handleSubmit}>
+          <form className='flex flex-col gap-4 my-2'>
             <div>
               <label htmlFor="email" className='block text-sm font-medium'>Your email</label>
               <input type="email" id='email' required placeholder='iwanttohireyou@gmail.com'
@@ -65,10 +65,10 @@ const EmailSection = () => {
               <textarea id='message' required placeholder='Write what you whant in there :)'
               className='border border-[#abdafc] rounded-md px-2 py-1 w-full' />
             </div>
-            <button
+            {/* <button
               type='submit'
               className='border-4 border-transparent bg-[#f970a9] hover:bg-transparent hover:border-4 hover:border-[#f970a9] text-white font-medium py-2 px-5 rounded-full w-full transition-all ease-in duration-200'
-            >Send message</button>
+            >Send message</button> */}
           </form>
         </div>
     </section>
