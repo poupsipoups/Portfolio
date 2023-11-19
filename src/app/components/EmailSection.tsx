@@ -38,7 +38,7 @@ const EmailSection = () => {
     <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 px-12 gap-4'>
         <div>
             <h5 className='text-xl font-bold my-2'>Let&apos;s connect</h5>
-            <p className='mb-4 max-w-md'>I&apos;m currently looking for a 6 month internship in a web agency in Europe in a full-stack of front-end development position. I am open to any opportunity ! :) If you have any question or if you're interested by my porfile, contact me by any platform you want !</p>
+            <p className='mb-4 max-w-md'>I&apos;m currently looking for a 6 month internship in a web agency in Europe in a full-stack of front-end development position. I am open to any opportunity ! :) If you have any question or if you&apos;re interested by my porfile, contact me by any platform you want !</p>
             <div className='socials flex flex-row gap-2'>
               <Link href='https://github.com/poupsipoups' target='_blank'>
                   <Image src={GitHubIcon} alt='github icon' width={30} height={30}></Image>
