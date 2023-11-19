@@ -56,7 +56,7 @@ const TAB_DATA = [
         <li>BDI as communication manager (student association)</li>
         <li>Foy INSA Rennes as communication manager (studend bar and concert hall) </li>
         <li>BEBOP INSA Rennes as communication manager (concert organization)</li>
-        <li>Rock'n Solex festival in DECO's team</li>
+        <li>Rock&apos;n Solex festival in DECO&apos;s team</li>
       </ul>
     ),
   },
@@ -82,7 +82,7 @@ const AboutSection = () => {
             
             <div>
               <h2 className='text-4xl font-bold mb-4'>About me</h2>
-              <p className='text-base lg:text-lg text-[#1b1b1e]'>I'm a last year student in the engineering school ESIEE Paris. My major is Image, Multimedias, Audioviual and Communication (IMAC). I've learned a lot in computer sciences but also in art and design. Then I have a very polyvalent profile ! I want to work in web development or mobile development in full-stack or front-end. I hope you enjoy what you read !</p>
+              <p className='text-base lg:text-lg text-[#1b1b1e]'>I&apos;m a last year student in the engineering school ESIEE Paris. My major is Image, Multimedias, Audioviual and Communication (IMAC). I&apos;ve learned a lot in computer sciences but also in art and design. Then I have a very polyvalent profile ! I want to work in web development or mobile development in full-stack or front-end. I hope you enjoy what you read !</p>
               <div className='flex flex-row justify-between mt-8'>
               <TabButton
                 selectTab={async () => handleTabChange("skills")}
