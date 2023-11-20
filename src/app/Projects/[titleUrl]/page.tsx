@@ -65,7 +65,7 @@ const Page: React.FC<projectProps> = ({params}) => {
             }
             {projectImages?.map((imageName, index) => (
             <div key={index} className='mb-5'>
-              <Image src={`/images/${params.titleUrl}/${imageName}`} alt={`Image ${index + 1}`} width={600} height={500} className='rounded-xl' />
+              <Image src={`/images/${imageName}`} alt={`Image ${index + 1}`} width={600} height={500} className='rounded-xl' />
             </div> ))}
           </div> 
         </div>
