@@ -30,6 +30,7 @@ const ProjectsSection = () => {
                 key={project.id}
                 id={project.id} 
                 title={project.title} 
+                titleUrl={project.titleUrl}
                 description={project.about} 
                 imgUrl={project.image} 
                 gitUrl={project.gitUrl} 

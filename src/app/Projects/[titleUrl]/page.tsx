@@ -10,14 +10,14 @@ import Link from 'next/link';
 
 interface projectProps {
   params:{
-    title: string
+    titleUrl: string
   }
     
 };
 
 const Page: React.FC<projectProps> = ({params}) => {
 
-  const project = projectData.find(obj => { return (obj.title == params.title)});
+  const project = projectData.find(obj => { return (obj.titleUrl == params.titleUrl)});
 
   const projectImages = project?.images;
   const projectVideos = project?.videos;
@@ -65,7 +65,7 @@ const Page: React.FC<projectProps> = ({params}) => {
             }
             {projectImages?.map((imageName, index) => (
             <div key={index} className='mb-5'>
-              <Image src={`/assets/${params.title}/${imageName}`} alt={`Image ${index + 1}`} width={600} height={500} className='rounded-xl' />
+              <Image src={`/images/${params.titleUrl}/${imageName}`} alt={`Image ${index + 1}`} width={600} height={500} className='rounded-xl' />
             </div> ))}
           </div> 
         </div>
