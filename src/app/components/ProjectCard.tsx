@@ -3,14 +3,14 @@ import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 interface ProjectCardProps{
+    id: number,
     imgUrl : string, 
     title: string,
     description: string, 
     gitUrl: string,
-    previewUrl: string
 }
 
-const ProjectCard:React.FC<ProjectCardProps> = ({imgUrl, title, description, gitUrl, previewUrl}) => {
+const ProjectCard:React.FC<ProjectCardProps> = ({id, imgUrl, title, description, gitUrl}) => {
   return (
     <><div>
         <div
@@ -20,7 +20,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({imgUrl, title, description, git
                 <Link href={gitUrl} className='mr-2 h-14 w-14 border-2 relative rounded-full border-white hover:border-[#aaf540] group/link'>
                   <CodeBracketIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer group-hover/link:text-[#aaf540]"></CodeBracketIcon>
                 </Link>
-                <Link href={previewUrl} className='h-14 w-14 border-2 relative rounded-full border-white hover:border-[#aaf540] group/link'>
+                <Link href={`/Projects/${title}`}className='h-14 w-14 border-2 relative rounded-full border-white hover:border-[#aaf540] group/link'>
                   <EyeIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white cursor-pointer group-hover/link:text-[#aaf540]"></EyeIcon>
                 </Link>
               </div>

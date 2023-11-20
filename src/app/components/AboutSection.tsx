@@ -74,7 +74,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className='text-black mt-56 bg-white h-[fit]'>
+    <section className='text-black mt-56 bg-white h-[100hv]'>
         <div className='md:grid md:grid-cols-2 items-center px-20 py-8 xl:gap-8 sm:py-16 xl:px-16'>
 
           <Image src='/images/about-me.jpg' alt="photo of me" width={500} height={500} className='rounded-xl'></Image>
