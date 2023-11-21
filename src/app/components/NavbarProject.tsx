@@ -46,36 +46,37 @@ const Navbar = () => {
   return (
     <nav className='fixed top-0 left-0 right-0 z-10'>
         <div className='relative'>
-        <div className='flex flex-wrap items-center justify-between mx-auto px-8 py-4 z-5 absolute top-0 left-0 right-0 nav-background z-11'>
+        <div className='flex flex-wrap items-center justify-between mx-auto px-8 py-4 z-5 absolute top-0 left-0 right-0 nav-background opacity-60 z-11'>
             {/* <div className='nav-background z-6' style={{ opacity: scrollOpacity}}></div> */}
-            <p className='text-xl md:text-3xl opacity-0'>Pauline</p>
+            <p className='text-xl md:text-2xl opacity-0 pb-4'>Pauline</p>
         </div>
         
-        <div className='flex flex-wrap items-center justify-between mx-auto px-8 py-4 z-12 absolute top-0 left-0 right-0'>
+        <div className='flex flex-wrap items-center justify-between mx-auto px-8 py-4 z-12 absolute top-0 left-0 right-0 mt-2'>
             
 
             
-            <Link href={"/"} className='text-2xl md:text-5xl font-semibold text-white hover:text-[#aaf540]'>Pauline Gobé</Link>
+            <Link href={"/"} className='text-2xl md:text-3xl font-semibold text-white hover:text-[#AFE54B]'>Pauline Gobé</Link>
             <div className='mobile-menu block md:hidden z-12'>
                 {navbarOpen? (
                     <button 
                     onClick={()=> setNavbarOpen(false)} 
-                    className='flex items-center px-3 py-2 border rounded border-white text-white hover:text-[#aaf540] hover:border-[#aaf540]'>
+                    className='flex items-center px-3 py-2 border rounded border-white text-white hover:text-[#AFE54B] hover:border-[#AFE54B]'>
                         <XMarkIcon className='h-5 w-5' ></XMarkIcon>
                     </button>
                 ) :
                 (
                     <button 
                     onClick={()=> setNavbarOpen(true)} 
-                    className='flex items-center px-3 py-2 border rounded border-white text-white hover:text-[#aaf540] hover:border-[#aaf540]'>
+                    className='flex items-center px-3 py-2 border rounded border-white text-white hover:text-[#AFE54B] hover:border-[#AFE54B]'>
                         <Bars3Icon className='h-5 w-5'></Bars3Icon>
                     </button>
                     
                 )
                 }
             </div>
+
             <div className='menu hidden md:block md:w-auto z-12' id="navbar">
-                <ul className='flex p-4 md:p-0 sm:flex-row md:space-x-8 mt-5'>
+                <ul className='flex p-4 md:p-0 sm:flex-row md:space-x-8'>
                     {
                         NavLinks.map((link, index)=>{
                             return(

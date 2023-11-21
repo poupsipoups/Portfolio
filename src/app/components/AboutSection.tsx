@@ -2,29 +2,32 @@
 import React, { useState, useTransition } from 'react'
 import Image from 'next/image';
 import TabButton from './TabButton';
+import {motion} from "framer-motion";
+import TagComponent from './TagComponent';
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>React</li>
-        <li>ReactNative</li>
-        <li>Flutter</li>
-        <li>VueJS</li>
-        <li>AngularJS</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <li>C++</li>
-        <li>OpenGL</li>
-        <li>Figma</li>
-        <li>Adobe package</li>
-        <li>Blender</li>
-      </ul>
+      <div className='flex flex-wrap justify-around'>
+        <TagComponent name='HTML'/>
+        <TagComponent name='CSS'/>
+        <TagComponent name='Javascript'/>
+        <TagComponent name='React'/>
+        <TagComponent name='ReactNative'/>
+        <TagComponent name='VueJS'/>
+        <TagComponent name='Flutter'/>
+        <TagComponent name='AngularJS'/>
+        <TagComponent name='PHP'/>
+        <TagComponent name='MySQL'/>
+        <TagComponent name='C++'/>
+        <TagComponent name='OpenGL'/>
+        <TagComponent name='Figma'/>
+        <TagComponent name='Adobe Package'/>
+        <TagComponent name='Blender'/>
+      </div>
+      
     ),
   },
   {
@@ -74,15 +77,22 @@ const AboutSection = () => {
   };
 
   return (
-    <section className='text-black mt-56 bg-white h-[100hv]'>
-        <div className='md:grid md:grid-cols-2 items-center px-20 py-8 xl:gap-8 sm:py-16 xl:px-16'>
+    <motion.section
+      key="about" 
+      id='about' 
+      className='text-black mt-56 bg-white h-[100vh] scroll-smooth' 
+      style={{zIndex:10}}>
+        <div className='md:grid md:grid-cols-2  px-20 py-8 xl:gap-8 sm:py-16 xl:px-16 mt-24'>
 
-          <Image src='/images/about-me.jpg' alt="photo of me" width={500} height={500} className='rounded-xl'></Image>
+          <Image src='/images/about-me.jpg' alt="photo of me" width={400} height={400} className='rounded-xl place-self-center'></Image>
 
             
-            <div>
-              <h2 className='text-4xl font-bold mb-4'>About me</h2>
-              <p className='text-base lg:text-lg text-[#1b1b1e]'>I&apos;m a last year student in the engineering school ESIEE Paris. My major is Image, Multimedias, Audioviual and Communication (IMAC). I&apos;ve learned a lot in computer sciences but also in art and design. Then I have a very polyvalent profile ! I want to work in web development or mobile development in full-stack or front-end. I hope you enjoy what you read !</p>
+            <div className='mt-12 flex flex-col items-center'>
+              <div>
+                <h2 className='text-4xl font-extrabold mb-4 font-Jost'>About me</h2>
+                <p className='text-base lg:text-lg text-[#1b1b1e] max-w-md'>I&apos;m a last year student in the engineering school ESIEE Paris. My major is Image, Multimedias, Audioviual and Communication (IMAC). I&apos;ve learned a lot in computer sciences but also in art and design. Then I have a very polyvalent profile ! I want to work in web development or mobile development in full-stack or front-end. I hope you enjoy what you read !</p>
+              </div>
+              
               <div className='flex flex-row justify-between mt-8'>
               <TabButton
                 selectTab={async () => handleTabChange("skills")}
@@ -112,7 +122,7 @@ const AboutSection = () => {
             
         </div>
         
-    </section>
+    </motion.section>
   )
 }
 

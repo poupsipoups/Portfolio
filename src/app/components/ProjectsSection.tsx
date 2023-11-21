@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import ProjectCard from './ProjectCard';
 import ProjectTag from './ProjectTag';
 import projectData from '../api/projects';
+import {motion} from "framer-motion";
 
 const ProjectsSection = () => {
     const [tag, setTag] = useState('All');
@@ -16,7 +17,14 @@ const ProjectsSection = () => {
     );
     
   return (
-    <section className='text-black mt-56 bg-white h-[fit] px-20 py-8'>
+    <motion.section 
+        key="projects"
+        id='projects' 
+        className='text-black mt-56 bg-white h-[fit] px-20 py-8'
+        initial={{opacity:0}} 
+      animate={{opacity: 1}} 
+      transition={{duration:0.75, ease: "easeOut"}}
+      exit={{opacity:0}}>
         <h2 className='text-4xl font-bold mb-4'>My Projects</h2>
         <div className='flex flex-row justify-center items-center gap-2 py-6'>
             <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"}/>
@@ -36,7 +44,7 @@ const ProjectsSection = () => {
                 gitUrl={project.gitUrl} 
                 />))}
         </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -13,7 +13,7 @@ const TabButton:React.FC<TabButtonProps> = ({ active, selectTab, children }) => 
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold hover:text-[#aaf540] ${buttonClasses}`}>
+      <p className={`mr-3 font-semibold hover:text-[#AFE54B] ${buttonClasses}`}>
         {children}
       </p>
     </button>

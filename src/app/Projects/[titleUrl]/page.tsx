@@ -7,6 +7,7 @@ import Image from 'next/image';
 import LiteYouTubeEmbed from "react-lite-youtube-embed"
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css"
 import Link from 'next/link';
+import {ChevronRightIcon, ChevronLeftIcon} from "@heroicons/react/24/outline";
 
 interface projectProps {
   params:{
@@ -34,6 +35,18 @@ const Page: React.FC<projectProps> = ({params}) => {
         <h1 className='text-4xl font-bold mb-4'>{project?.title}</h1>
         <p>{project?.about}</p>
         <div>{project?.description && parse(project.description)}</div>
+
+        <div className='w-full flex justify-center items-center mt-5'>
+          <button className='w-full py-2 border-2 text-[#00167A] border-[#00167A] hover:text-white hover:bg-[#00167A] transition-all duration-600 ease-in-out  flex flex-row justify-center items-center '>
+            Voir le projet sur git      
+            <ChevronRightIcon className='h-4 w-4 ml-2'/>
+            </button>
+        </div>
+        <div className='mt-5 w-full flex justify-center'>
+          <Link href={'/#projects'} className='text-[#00167A] flex flex-row justify-center items-center hover:text-[#AFE54B] transition-all ease-in-out duration-500'>
+            <ChevronLeftIcon className='h-4 w-4 mr-2'/> Retour aux projets
+          </Link>
+        </div>
 
       </div>
       <div className='col-span-7'></div>
