@@ -20,13 +20,9 @@ const ProjectsSection = () => {
     <motion.section 
         key="projects"
         id='projects' 
-        className='text-black mt-56 bg-white h-[fit] px-20 py-8'
-        initial={{opacity:0}} 
-      animate={{opacity: 1}} 
-      transition={{duration:0.75, ease: "easeOut"}}
-      exit={{opacity:0}}>
+        className='text-black md:mt-56 mt-24 bg-white h-[fit] md:px-20 px-10 py-8'>
         <div className='flex justify-center'>
-            <h2 className='text-4xl font-extrabold mb-4 mt-24 mx-auto font-jost'>My Projects</h2>
+            <h2 className='md:text-4xl text-3xl font-extrabold mb-4 md:mt-24 mx-auto font-jost'>My Projects</h2>
         </div>
         <div className='flex flex-row justify-center items-center gap-2 py-6 font-jost'>
             <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"}/>

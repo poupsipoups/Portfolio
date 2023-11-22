@@ -80,9 +80,9 @@ const AboutSection = () => {
     <motion.section
       key="about" 
       id='about' 
-      className='text-black mt-56 bg-white h-[100vh]' 
+      className='text-black md:mt-56 bg-white md:h-[100vh] h-fit' 
       style={{zIndex:10}}>
-        <div className='md:grid md:grid-cols-2  px-20 py-8 xl:gap-8 sm:py-16 xl:px-16 mt-24'>
+        <div className='md:grid md:grid-cols-2  md:px-20 px-10 py-8 xl:gap-8 sm:py-16 xl:px-16 mt-24'>
 
           <Image src='/images/about-me.jpg' alt="photo of me" width={400} height={400} className='rounded-xl place-self-center'></Image>
 

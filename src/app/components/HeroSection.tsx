@@ -13,10 +13,6 @@ const HeroSection = () => {
     <motion.section
       key="hero" 
       className='px-12' 
-      initial={{opacity:0}} 
-      animate={{opacity: 1}} 
-      transition={{duration:0.75, ease: "easeOut"}}
-      exit={{opacity:0}}
     >
 
        <div className="grid grid-cols-1 sm:grid-cols-12 z-2">
@@ -46,7 +42,7 @@ const HeroSection = () => {
          </div>
        </div>
        <div className='grid grid-cols-1 mt-10 '>
-        <button className='place-self-center bg-transparent text-white hover:border-2 hover:border-[#AFE54B] hover:text-[#AFE54B] rounded-full'>
+        <button className='hidden md:block place-self-center bg-transparent text-white hover:border-2 hover:border-[#AFE54B] hover:text-[#AFE54B] rounded-full'>
           <Link href={'#about'} className='flex flex-col align-center justify-center font-jost px-6 py-2'>
             <span>Let&apos;s start</span>
             <ChevronDoubleDownIcon className='h-6 w-6 mx-auto'/>

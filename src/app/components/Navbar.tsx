@@ -24,23 +24,6 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     const [scrollOpacity, setScrollOpacity] = useState(0);
-
-    // const handleScroll = () => {
-    //   const scrollY = window.scrollY || document.documentElement.scrollTop;
-    //   const opacity =  (scrollY-500) / 1000; // Adjust the divisor for the scroll distance
-  
-    //   setScrollOpacity(opacity > 0.5 ? 0.5 : opacity); // Ensure opacity is between 0 and 1
-    // };
-  
-    // useEffect(() => {
-    //   // Add scroll event listener when component mounts
-    //   window.addEventListener('scroll', handleScroll);
-  
-    //   // Remove scroll event listener when component unmounts
-    //   return () => {
-    //     window.removeEventListener('scroll', handleScroll);
-    //   };
-    // }, []); 
   
 
   return (
@@ -67,8 +50,8 @@ const Navbar = () => {
                 )
                 }
             </div>
-            <div></div>
             <div className='menu hidden md:block md:w-auto z-12' id="navbar">
+            <div></div>
                 <ul className='flex p-4 md:p-0 sm:flex-row md:space-x-8 mt-5'>
                     {
                         NavLinks.map((link, index)=>{

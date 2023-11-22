@@ -27,7 +27,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col">
          <Navbar></Navbar>
       
-         <div className="container mx-auto py-4 mt-48">
+         <div className="container mx-auto py-4 md:mt-48 mt-32">
             <HeroSection ></HeroSection>
             <AboutSection ></AboutSection>
             <ProjectsSection ></ProjectsSection>      

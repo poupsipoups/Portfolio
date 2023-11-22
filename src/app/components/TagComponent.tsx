@@ -6,8 +6,8 @@ interface TagProps {
 
 const TagComponent:React.FC<TagProps> = ({name}) => {
   return (
-    <div className='border-2 border-[#f970a9] rounded-full mx-5 mt-2'>
-        <span className='px-6 py-2'>{name}</span>
+    <div className='border-2 border-[#f970a9] rounded-full md:mx-5 md:mt-2 mx-1 mt-1'>
+        <span className='md:px-6 md:py-2 px-3 py-1'>{name}</span>
     </div>
   )
 }
