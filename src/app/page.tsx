@@ -3,17 +3,13 @@ import HeroSection from './components/HeroSection';
 import  Navbar  from './components/Navbar';
 import AboutSection from './components/AboutSection';
 import ProjectsSection from './components/ProjectsSection';
-import EmailSection from './components/EmailSection';
-import {AnimatePresence} from "framer-motion";
+import ContactSection from './components/ContactSection';
 
 
 
 
 
 export default function Home() {
-
-
-
 
 
   return (
@@ -32,12 +28,10 @@ export default function Home() {
          <Navbar></Navbar>
       
          <div className="container mx-auto py-4 mt-48">
-          <AnimatePresence initial={false} mode='wait'>
             <HeroSection ></HeroSection>
             <AboutSection ></AboutSection>
             <ProjectsSection ></ProjectsSection>      
-            <EmailSection></EmailSection>
-          </AnimatePresence>
+            <ContactSection></ContactSection>
             
           </div>
                {/* <div className='gradient-background'></div> */}

@@ -80,7 +80,7 @@ const AboutSection = () => {
     <motion.section
       key="about" 
       id='about' 
-      className='text-black mt-56 bg-white h-[100vh] scroll-smooth' 
+      className='text-black mt-56 bg-white h-[100vh]' 
       style={{zIndex:10}}>
         <div className='md:grid md:grid-cols-2  px-20 py-8 xl:gap-8 sm:py-16 xl:px-16 mt-24'>
 
@@ -90,7 +90,7 @@ const AboutSection = () => {
             <div className='mt-12 flex flex-col items-center'>
               <div>
                 <h2 className='text-4xl font-extrabold mb-4 font-Jost'>About me</h2>
-                <p className='text-base lg:text-lg text-[#1b1b1e] max-w-md'>I&apos;m a last year student in the engineering school ESIEE Paris. My major is Image, Multimedias, Audioviual and Communication (IMAC). I&apos;ve learned a lot in computer sciences but also in art and design. Then I have a very polyvalent profile ! I want to work in web development or mobile development in full-stack or front-end. I hope you enjoy what you read !</p>
+                <p className='text-base lg:text-lg text-[#1b1b1e] max-w-md font-zilla'>I&apos;m a last year student in the engineering school ESIEE Paris. My major is Image, Multimedias, Audioviual and Communication (IMAC). I&apos;ve learned a lot in computer sciences but also in art and design. Then I have a very polyvalent profile ! I want to work in web development or mobile development in full-stack or front-end. I hope you enjoy what you read !</p>
               </div>
               
               <div className='flex flex-row justify-between mt-8'>

@@ -5,8 +5,9 @@ import LinkedinIcon from "../../../public/images/icons/linkedin.svg";
 import Link from 'next/link';
 import Image from 'next/image';
 import {motion} from "framer-motion";
+import ContactFormComponent from './ContactFormComponent';
 
-const EmailSection = () => {
+const ContactSection = () => {
 
   // const handleSubmit = async (e: any) =>{
   //   e.preventDefault();
@@ -56,31 +57,9 @@ const EmailSection = () => {
               </Link>
             </div>
         </div>
-        <div>
-          <form className='flex flex-col gap-4 my-2'>
-            <div>
-              <label htmlFor="email" className='block text-sm font-medium'>Your email</label>
-              <input type="email" id='email' required placeholder='iwanttohireyou@gmail.com'
-              className='border border-[#abdafc] rounded-md px-2 py-1 w-full' />
-            </div>
-            <div>
-              <label htmlFor="subject" className='block text-sm font-medium'>Subject</label>
-              <input type="text" id='subject' required placeholder='Hey !'
-              className='border border-[#abdafc] rounded-md px-2 py-1 w-full' />
-            </div>
-            <div>
-              <label htmlFor="message"/>
-              <textarea id='message' required placeholder='Write what you whant in there :)'
-              className='border border-[#abdafc] rounded-md px-2 py-1 w-full' />
-            </div>
-            {/* <button
-              type='submit'
-              className='border-4 border-transparent bg-[#f970a9] hover:bg-transparent hover:border-4 hover:border-[#f970a9] text-white font-medium py-2 px-5 rounded-full w-full transition-all ease-in duration-200'
-            >Send message</button> */}
-          </form>
-        </div>
+        <ContactFormComponent></ContactFormComponent>
     </motion.section>
   )
 }
 
-export default EmailSection
+export default ContactSection

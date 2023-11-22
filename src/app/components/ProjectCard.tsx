@@ -28,9 +28,9 @@ const ProjectCard:React.FC<ProjectCardProps> = ({id, imgUrl, title, titleUrl, de
         </div>
           
       
-        <div className="text-black border-2 border-[#f970a9] rounded-b-xl py-6 px-4 mb-5">
-              <h5 className='text-xl font-semibold mb-2'>{title}</h5>
-              <p>{description}</p>
+        <div className="h-24 md:h-36 text-black border-2 border-[#f970a9] rounded-b-xl py-6 px-4 mb-5">
+              <h5 className='text-xl font-semibold mb-2 font-jost'>{title}</h5>
+              <p className='font-zilla'>{description}</p>
         </div>
       </div></>
   );

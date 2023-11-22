@@ -47,6 +47,18 @@ const projectData = [
         gitUrl: "/",
         images: ["ateatude.png"],
         videos:["lQYc_rqICTA"]
+    },
+    {
+        id: 5,
+        title: "Secretariat dashboard",
+        titleUrl: "secretariat",
+        about: "Internship project to improver secretariat's organization. Summer 2023",
+        description: "The purpose of this internship in Veoneer Safety system was to creat from A to Z an intern application to help the secretariat's organisation and stock managment. The only constrains were to have a calendar to book events in the compagny and to have a vision of the stock's state. The first step was to imagine the app on figma and then I could develop the app with this AngularJS framework for the front-end and PHP and mySQL (SQL Server) for the back-end. (I have the authorization from the compagny to show this project here.)",
+        image: "/images/projects_view/veoneer.png",
+        tag: ["All", "Web", "Design"],
+        gitUrl: "/",
+        images: ["veoneer.png", "veilleveoneer.png", "calendarfigma.png", "adminfigma.png", "calendar.png", "admin.png", "formcalendar.png"],
+        videos:[]
     }
 ];
 

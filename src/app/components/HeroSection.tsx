@@ -25,12 +25,12 @@ const HeroSection = () => {
               <span className='text-transparent bg-clip-text bg-[#AFE54B] hover:text-white animation duration-500 ease-in-out'>Hi, I&apos;m <span className='text-black hover:text-[#f970a9] animation duration-100 ease-in-out'>Pauline</span> :)</span>
               <br />
             </h1>
-            <p className='text-white text-base sm:textl-lg lg:text-xl mb-6'>
+            <p className='text-white text-base sm:textl-lg lg:text-xl mb-6 font-zilla'>
               Welcome to my Portfolio ! You will learn some things about me and see some of my projects. Enjoy your trip !
             </p>
             <div>
-              <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white text-[#f970a9] hover:bg-[#f970a9] hover:text-white'>Hire me</button>
-              <button className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-100 border-4 border-[#f970a9] mt-3'>Check my CV</button>
+              {/* <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white text-[#f970a9] hover:bg-[#f970a9] hover:text-white'>Hire me</button> */}
+              <Link href={'/files/CV_2024_English.pdf'} target='_blank' className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-100 border-4 border-[#f970a9] mt-3'>Check my CV</Link>
             </div>
          </div>
          <div className='col-span-5 place-self-center mt-4'>
@@ -48,7 +48,7 @@ const HeroSection = () => {
        <div className='grid grid-cols-1 mt-10 '>
         <button className='place-self-center bg-transparent text-white hover:border-2 hover:border-[#AFE54B] hover:text-[#AFE54B] rounded-full'>
           <Link href={'#about'} className='flex flex-col align-center justify-center font-jost px-6 py-2'>
-            <span>Let's start</span>
+            <span>Let&apos;s start</span>
             <ChevronDoubleDownIcon className='h-6 w-6 mx-auto'/>
           </Link>
           

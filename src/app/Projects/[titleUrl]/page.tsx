@@ -2,7 +2,7 @@
 import React from 'react';
 import projectData from '@/app/api/projects';
 import parse from 'html-react-parser';
-import NavbarProject from '@/app/components/NavbarProject';
+import Navbar from '@/app/components/Navbar';
 import Image from 'next/image';
 import LiteYouTubeEmbed from "react-lite-youtube-embed"
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css"
@@ -26,7 +26,7 @@ const Page: React.FC<projectProps> = ({params}) => {
     
   return (
     <main className="flex min-h-screen flex-col bg-white">
-      <NavbarProject></NavbarProject>
+      <Navbar></Navbar>
 
       <div className='md:grid md:grid-cols-12 h-screen overflow-y-hidden w-full px-20 py-8 xl:gap-8 sm:py-16 xl:px-16 mt-24 fixed top-0 left-0'>
 

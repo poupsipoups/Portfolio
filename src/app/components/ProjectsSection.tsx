@@ -25,14 +25,16 @@ const ProjectsSection = () => {
       animate={{opacity: 1}} 
       transition={{duration:0.75, ease: "easeOut"}}
       exit={{opacity:0}}>
-        <h2 className='text-4xl font-bold mb-4'>My Projects</h2>
-        <div className='flex flex-row justify-center items-center gap-2 py-6'>
+        <div className='flex justify-center'>
+            <h2 className='text-4xl font-extrabold mb-4 mt-24 mx-auto font-jost'>My Projects</h2>
+        </div>
+        <div className='flex flex-row justify-center items-center gap-2 py-6 font-jost'>
             <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"}/>
             <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"}/>
             <ProjectTag onClick={handleTagChange} name="Software" isSelected={tag === "Software"}/>
             <ProjectTag onClick={handleTagChange} name="Creation" isSelected={tag === "Creation"}/>
         </div>
-        <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
+        <div className='grid md:grid-cols-2 gap-8 md:gap-12 md:mx-48 mt-14'>
             {filteredProjects.map((project)=> (
             <ProjectCard 
                 key={project.id}
