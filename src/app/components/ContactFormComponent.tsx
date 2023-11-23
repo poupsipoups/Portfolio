@@ -69,7 +69,7 @@ const ContactFormComponent = () => {
                 id='message' 
                 required 
                 {...register('message')}
-                placeholder='Write what you whant in there :)'
+                placeholder='Write what you want in there :)'
                 className='border border-[#abdafc] rounded-md px-2 py-1 w-full' />
         </div>
         <button  
