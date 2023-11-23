@@ -78,7 +78,7 @@ const Page: React.FC<projectProps> = ({params}) => {
           <div className='md:col-span-5'></div>
 
 
-          <div className='flex flex-col items-center mb-5 md:overflow-y-auto scrollbar-hide mdcol-span-7'>
+          <div className='flex flex-col items-center mb-5 md:overflow-y-auto scrollbar-hide md:col-span-7'>
 
             <div className='mb-5'>
             {

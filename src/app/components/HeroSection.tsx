@@ -24,9 +24,14 @@ const HeroSection = () => {
             <p className='text-white text-base sm:textl-lg lg:text-xl mb-6 font-zilla'>
               Welcome to my Portfolio ! You will learn some things about me and see some of my projects. Enjoy your trip !
             </p>
-            <div className='flex flex end'>
-              {/* <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white text-[#f970a9] hover:bg-[#f970a9] hover:text-white'>Hire me</button> */}
-              <Link href={'/files/CV_2024_English.pdf'} target='_blank' className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-100 border-4 border-[#f970a9] mt-3'>Check my CV</Link>
+            <div className='flex flex-center'>
+              <Link 
+                href={'/files/CV_2024_English.pdf'} 
+                target='_blank' 
+                className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent border-4 border-[#f970a9] mt-3'>Check my CV</Link>
+              <div className='rounded-full px-6 py-3  hover:bg-slate-100 opacity-30 hover:blur-sm mt-3 z-0'>
+                <p className='opacity-0 '>Check my CV</p>
+              </div>
             </div>
          </div>
          <div className='col-span-5 place-self-center mt-4'>

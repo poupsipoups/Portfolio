@@ -59,6 +59,18 @@ const projectData = [
         gitUrl: "",
         images: ["veoneer.png", "veilleveoneer.png", "calendarfigma.png", "adminfigma.png", "calendar.png", "admin.png", "formcalendar.png"],
         videos:[]
+    },
+    {
+        id: 6,
+        title: "Papeterie",
+        titleUrl: "papeterie",
+        about: "OpenGL and C++ 3D Project using boids. April 2023",
+        description: "School project which consisted to create boids in c++ and then create a scene with the librairie OpenGl3+. The modelisation was done on Blender and then integrated on the OpenGL project.",
+        image: "/images/papeterie.png",
+        tag: ["All", "Software"],
+        gitUrl: "https://github.com/poupsipoups/Papeterie",
+        images: ["papeterie.png", "papeterie2.png", "papeterie3.png", "papeterie4.png", "papeterie5.png"],
+        videos:[]
     }
 ];
 
