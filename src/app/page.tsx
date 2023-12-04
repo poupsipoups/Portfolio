@@ -24,10 +24,10 @@ export default function Home() {
     
       
       
-      <main className="flex min-h-screen flex-col">
+      <main className="flex min-h-screen flex-col w-[100%]">
          <Navbar></Navbar>
       
-         <div className="container mx-auto py-4 md:mt-48 mt-32">
+         <div className="container w-full py-4 md:mt-48 mt-32 max-w-full">
             <HeroSection ></HeroSection>
             <AboutSection ></AboutSection>
             <ProjectsSection ></ProjectsSection>      

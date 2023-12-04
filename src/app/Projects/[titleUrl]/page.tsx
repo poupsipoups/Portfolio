@@ -52,10 +52,14 @@ const Page: React.FC<projectProps> = ({params}) => {
         {
           hasGitLink?(
           <div className='w-full flex justify-center items-center mt-5' >
-            <button className='w-full py-2 border-2 text-[#00167A] border-[#00167A] hover:text-white hover:bg-[#00167A] transition-all duration-600 ease-in-out  flex flex-row justify-center items-center '>
+            
+              <button className='w-full py-2 border-2 text-[#00167A] border-[#00167A] hover:text-white hover:bg-[#00167A] transition-all duration-600 ease-in-out '>
+              <Link href={project?.gitUrl ?? ''} target='_blank' className=' flex flex-row justify-center items-center '>
               Voir le projet sur git      
-            <ChevronRightIcon className='h-4 w-4 ml-2'/>
+              <ChevronRightIcon className='h-4 w-4 ml-2'/>
+              </Link> 
             </button>
+            
           </div>) : (<div></div>)
         }
         

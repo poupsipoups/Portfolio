@@ -80,14 +80,15 @@ const AboutSection = () => {
     <motion.section
       key="about" 
       id='about' 
-      className='text-black md:mt-56 bg-white md:h-[100vh] h-fit' 
+      className='text-black md:mt-56 bg-white md:h-[100vh] sm:h-[100hv] h-fit' 
       style={{zIndex:10}}>
         <div className='md:grid md:grid-cols-2  md:px-20 px-10 py-8 xl:gap-8 sm:py-16 xl:px-16 mt-24'>
 
-          <Image src='/images/about-me.jpg' alt="photo of me" width={400} height={400} className='rounded-xl place-self-center'></Image>
-
-            
-            <div className='mt-12 flex flex-col items-center'>
+          <div className='flex flex-col items-center md:mt-24 sm:mt-24'> 
+            <Image src='/images/about-me.jpg' alt="photo of me" width={400} height={400} className='rounded-xl'></Image>
+          </div>
+      
+            <div className='mt-20 flex flex-col items-center'>
               <div>
                 <h2 className='text-4xl font-extrabold mb-4 font-Jost'>About me</h2>
                 <p className='text-base lg:text-lg text-[#1b1b1e] max-w-md font-zilla'>I&apos;m a last year student in the engineering school ESIEE Paris. My major is Image, Multimedias, Audioviual and Communication (IMAC). I&apos;ve learned a lot in computer sciences but also in art and design. Then I have a very polyvalent profile ! I want to work in web development or mobile development in full-stack or front-end. I hope you enjoy what you read !</p>
