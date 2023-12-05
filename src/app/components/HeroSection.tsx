@@ -29,9 +29,9 @@ const HeroSection = () => {
                 href={'/files/CV_2024_English.pdf'} 
                 target='_blank' 
                 className='px-6 py-3 w-full sm:w-fit rounded-full bg-transparent border-4 border-[#f970a9] mt-3'>Check my CV</Link>
-              <div className='rounded-full px-6 py-3  hover:bg-slate-100 opacity-30 hover:blur-sm mt-3 z-0'>
+              {/* <div className='rounded-full px-6 py-3  hover:bg-slate-100 opacity-30 hover:blur-sm mt-3 z-0'> */}
                 <p className='opacity-0 '>Check my CV</p>
-              </div>
+              {/* </div> */}
             </div>
          </div>
          <div className='col-span-5 place-self-center mt-4'>
