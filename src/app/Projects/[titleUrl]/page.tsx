@@ -45,9 +45,9 @@ const Page: React.FC<projectProps> = ({params}) => {
 
       <div className='md:sticky md:top-0 md:h-screen md:overflow-y-auto md:pb-8 md:col-span-5'>
 
-        <h1 className='text-4xl font-bold mb-4 font-jost'>{project?.title}</h1>
-        <p className='font-zilla'>{project?.about}</p>
-        <div className='font-zilla'>{project?.description && parse(project.description)}</div>
+        <h1 className='text-4xl font-bold mb-4 font-jost text-black'>{project?.title}</h1>
+        <p className='font-zilla text-[#AFE54B]'>{project?.about}</p>
+        <div className='font-zilla text-black'>{project?.description && parse(project.description)}</div>
 
         {
           hasGitLink?(
